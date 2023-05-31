@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Cifrado</title>
+</head>
+
+<header>
+    <img src="logo.png" alt="Logo TonyDisenador">
+</header>
+
+<body>
+    <main>
+        <section class="Cifrado">
+            <textarea name="texto" id="textoEncriptado" placeholder="Ingresa tu texto" cols="30" rows="10"></textarea></textarea>
+            
+            <div class="botones">
+                <button type="button" id="botonEncriptado">Encriptar</button>
+                <button type="button" id="botonDesencriptado">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <section class="respuesta">
+            <textarea name="resultado" id="textoDesencriptado" placeholder="No hay texto cifrado" cols="30" rows="10"></textarea></textarea>
+            
+            <div class="botoncopiar">
+                <button type="button" id="botonCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+
+    var boton1 = document.querySelector("#botonEncriptado");
+        boton1.onclick = encriptar;
+
+    var boton2 = document.querySelector("#botonDesencriptado");
+        boton2.onclick = Desencriptar;
+
+    var boton3 = document.querySelector("#botonCopiar");
+        boton3.onclick = copiar;
+</script>
+
+<footer>
+
+    <img src="firma.png" alt="Tony Disenador">
+</footer>
+</html>
